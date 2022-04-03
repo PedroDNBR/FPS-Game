@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18a728a5c4701a4aa725d897bd8800b, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  name: Teste
+  maxMagazineAmmo: 10
+  fireRate: 0.5
+  weaponType: 1
+  baseDamage: 15
+  weaponPrefab: {fileID: 8020433590381284196, guid: 31108e89d69d5764fbbe3a66edfa64a7, type: 3}
+  recoilResetSpeed: 5
+  recoilMultiplier: 1
+  kick: 4
+  horizontalSway: 5
+  verticalSway: 2
+  recoilCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
