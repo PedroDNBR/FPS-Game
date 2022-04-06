@@ -58,7 +58,7 @@ namespace FPS
                 targetPosition.y += Random.Range(-weaponItem.verticalSway, weaponItem.verticalSway) * weaponItem.recoilMultiplier;
                 targetPosition.z -= Random.Range(0, weaponItem.kick) * weaponItem.recoilMultiplier;
 
-                targetRotation.x -= (horizontalRecoil + 1) * Random.Range(weaponItem.horizontalSway / 2, weaponItem.horizontalSway) * weaponItem.recoilMultiplier;
+                targetRotation.x -= (horizontalRecoil + 1) * weaponItem.horizontalSway * weaponItem.recoilMultiplier;
                 targetRotation.y += Random.Range(-weaponItem.kick, weaponItem.kick) * weaponItem.recoilMultiplier;
                 targetRotation.z -= Random.Range(-weaponItem.verticalSway, weaponItem.verticalSway) * weaponItem.recoilMultiplier;
 
@@ -92,7 +92,7 @@ namespace FPS
 
         void InstantiateProjectile()
         {
-
+            Instantiate(weaponItem.bullet, muzzle.transform.position, muzzle.transform.rotation);
         }
     }
 

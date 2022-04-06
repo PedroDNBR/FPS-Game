@@ -14,6 +14,7 @@ namespace FPS
         public WeaponTypes weaponType = new WeaponTypes();
         public float baseDamage = 15;
         public GameObject weaponPrefab;
+        public GameObject bullet;
 
         [Header("Weapon Recoil")]
         public float recoilResetSpeed = 5f;
